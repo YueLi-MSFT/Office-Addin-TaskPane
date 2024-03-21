@@ -37,7 +37,7 @@
   "dependencies": {
     "core-js": "^3.9.1",
     "regenerator-runtime": "^0.13.7",
-    "@microsoft/teamsapp-cli": "^3.0.0",
+    "@microsoft/teamsapp-cli": "^3.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.13.10",
