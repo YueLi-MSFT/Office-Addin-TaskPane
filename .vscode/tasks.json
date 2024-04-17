@@ -77,6 +77,17 @@
       "problemMatcher": []
     },
     {
+      "label": "Install",
+      "type": "npm",
+      "script": "install",
+      "presentation": {
+        "clear": true,
+        "panel": "shared",
+        "showReuseMessage": false
+      },
+      "problemMatcher": []
+    },
+    {
       "label": "Lint: Check for problems",
       "type": "npm",
       "script": "lint",

@@ -208,11 +208,11 @@ async function updateTasksJsonFileForJSONManifest() {
   const data = await readFileAsync(tasksJson, "utf8");
   let content = JSON.parse(data);
 
-  // content.tasks.forEach(function (task) {
-  //   if (task.label.startsWith("Build") || task.label.startsWith("Debug:")) {
-  //     task.dependsOn = ["Install"];
-  //   }
-  // });
+  content.tasks.forEach(function (task) {
+    if (task.label.startsWith("Build") || task.label.startsWith("Debug:")) {
+      task.dependsOn = ["Install"];
+    }
+  });
 
   await writeFileAsync(tasksJson, JSON.stringify(content, null, 2));
 }
